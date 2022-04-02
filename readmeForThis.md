@@ -1,6 +1,9 @@
 ### Exercising ReactJS building desney-plus web site using
 [ref ReactJS Tutorial for Beginners - Full Course in 20 Hours [2022]](https://www.youtube.com/watch?v=0mVbNp1ol_w&list=PLxF42TszRi96AOvErXMKqKe-oPdKxsT53&index=4)
 [ref resources](https://drive.google.com/drive/folders/1G5RYGvHSj7eXL5m6f7GoyF35a6vxUR1J)
+---
+<iframe></iframe>
+---
 > (Within the footage: 2:24 ~ )
 
 > ReactJs project 생성
@@ -25,4 +28,8 @@
 ```
     $npm i react-reveal
 ```
-> gitHub push 시 파일 하나 당 100M size 제한 있음
+> Image slider 로 react-slick사용
+```
+    $npm install react-slick
+    $npm install slick-carousel
+```

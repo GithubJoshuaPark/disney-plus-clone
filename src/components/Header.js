@@ -6,32 +6,32 @@ function Header() {
     <Nav>
       <Logo src="/images/logo.svg" />
       <NavMenu>
-        <a>
-          <img src="/images/home-icon.svg" />
+        <a href="http://goodneighborhood.kr">
+          <img src="/images/home-icon.svg"  alt=""/>
           <span>HOME</span>
         </a>
-        <a>
-          <img src="/images/search-icon.svg" />
+        <a href="http://goodneighborhood.kr">
+          <img src="/images/search-icon.svg" alt=""/>
           <span>SEARCH</span>
         </a>
-        <a>
-          <img src="/images/watchlist-icon.svg" />
+        <a href="http://goodneighborhood.kr">
+          <img src="/images/watchlist-icon.svg" alt=""/>
           <span>WATCHLIST</span>
         </a>
-        <a>
-          <img src="/images/original-icon.svg" />
+        <a href="http://goodneighborhood.kr">
+          <img src="/images/original-icon.svg" alt=""/>
           <span>ORIGINAL</span>
         </a>
-        <a>
-          <img src="/images/movie-icon.svg" />
+        <a href="http://goodneighborhood.kr">
+          <img src="/images/movie-icon.svg" alt=""/>
           <span>MOVIES</span>
         </a>
-        <a>
-          <img src="/images/series-icon.svg" />
+        <a href="http://goodneighborhood.kr">
+          <img src="/images/series-icon.svg" alt=""/>
           <span>SERIES</span>
         </a>
       </NavMenu>
-      <UserImg src="/images/joshua.png" />
+      <UserImg src="/images/joshua.png" alt=""/>
     </Nav>
   );
 }
@@ -44,6 +44,7 @@ const Nav = styled.nav`
   display: flex;
   align-items: center;
   padding: 0 36px;
+  overflow-x: hidden;
   @media (max-width: 860px) {
     justify-content: space-between;
   }
