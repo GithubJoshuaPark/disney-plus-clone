@@ -13,7 +13,6 @@
 ```
 
 > Using firebase auth (login)
-
 > materail ui icons 사용위해 npm install
 > [ref https://v4.mui.com/components/material-icons/](https://v4.mui.com/components/material-icons/)
 
@@ -32,4 +31,8 @@
 ```
     $npm install react-slick
     $npm install slick-carousel
+```
+> React Router dom (Page 전환을 위해)
+```
+    $npm install react-router-dom
 ```
