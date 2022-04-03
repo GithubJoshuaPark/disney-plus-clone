@@ -9,14 +9,14 @@ import { collection, getDocs } from "firebase/firestore";
 
 function Home() {
 
-    const [users, setUsers] = useState()
-    const usersCollectionRef = collection(db, "users")
+    const [movies, setMovies] = useState()
+    const usersCollectionRef = collection(db, "movies")
 
     useEffect(() => {
         
         const getUsers = async () => {
             const data = await getDocs(usersCollectionRef)
-            setUsers(data.docs.map((doc) => ({...doc.data(), id: doc.id })))
+            setMovies(data.docs.map((doc) => ({...doc.data(), id: doc.id })))
         }
 
         getUsers()

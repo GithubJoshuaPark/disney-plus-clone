@@ -1,7 +1,15 @@
 import React from "react";
 import styled from "styled-components";
+import { useNavigate } from 'react-router-dom';
 
 function Header() {
+  const navigate = useNavigate();
+
+  const goToLogin = () => {
+    console.log("Goto Login");
+    navigate("/login");
+  };
+
   return (
     <Nav>
       <Logo src="/images/logo.svg" />
@@ -31,7 +39,7 @@ function Header() {
           <span>SERIES</span>
         </a>
       </NavMenu>
-      <UserImg src="/images/joshua.png" alt=""/>
+      <UserImg src="/images/joshua.png" alt="" onClick={goToLogin}/>
     </Nav>
   );
 }
