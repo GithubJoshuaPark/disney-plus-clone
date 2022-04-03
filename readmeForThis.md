@@ -41,5 +41,14 @@
     $npm install firebase
     $npm install firebase-tools
 ```
+---
 > firebase usage ref 
 [ref CRUD Tutorial Using React + Firebase | Firebase 9 and Firestore Tutorial](https://www.youtube.com/watch?v=jCY6DH8F4oc)
+> make firebase project and make a cloud firestore of the firebase project
+> Add FiebaseFireStoreTest.js
+> Add firebase-config.js
+---
+> forebase authentication 
+[ref React Firebase Authentication Tutorial | Firebase 9 Tutorial](https://www.youtube.com/watch?v=9bXhf_TELP4)
+> Add FirebaseAuthTest.js
+> Add route link of FirebaseAuthTest in App.js

@@ -5,7 +5,7 @@ import { addDoc, collection, getDocs, updateDoc, doc, deleteDoc } from "firebase
 import { Link, useNavigate } from 'react-router-dom';
 
 // Firebase Firestore CRUD testing
-function FirebaseTest() {
+function FirebaseFireStoreTest() {
     const [users, setUsers] = useState();
     const [newName, setNewName] = useState("");
     const ageRef = useRef();
@@ -36,7 +36,9 @@ function FirebaseTest() {
         const ageRefToEmit = ageRef.current.value;
 
         await addDoc(usersCollectionRef, 
-                    {name: userRefToEmit, age: +ageRefToEmit});
+                    {name: userRefToEmit, age: +ageRefToEmit}).then(() => {
+                        navigate('/');
+                    });
     }
 
     const updateUser = async (id, age) => {
@@ -83,7 +85,7 @@ function FirebaseTest() {
     );
 }
 
-export default FirebaseTest
+export default FirebaseFireStoreTest
 
 const Container = styled.div`
     margin: 40px;

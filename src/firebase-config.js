@@ -1,6 +1,7 @@
 // Firebase v9 부터 Syntax가 아래와 같이 달라짐
 import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore"; // Firestore Database (not realtime database)
+import { getAuth } from 'firebase/auth';
 
 // (recommended to be saved this apiKey into dot.env file for confidential issue)
 const firebaseConfig = {
@@ -13,4 +14,5 @@ const firebaseConfig = {
 };
 
 const app = initializeApp(firebaseConfig);  // 1. get ref firebase connecting
-export const db = getFirestore(app);        // 2. get ref of firestore database
+export const auth = getAuth(app);           // 2. get ref firebase auth
+export const db = getFirestore(app);        // 3. get ref of firestore database
