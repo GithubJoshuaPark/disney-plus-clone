@@ -16,7 +16,7 @@ function Detail() {
                 <span>PLAY</span>
             </PlayButton>
             <TrailerButton>
-            <img src="/images/play-icon-white.png" alt="" />
+                <img src="/images/play-icon-white.png" alt="" />
                 <span>Trailer</span>
             </TrailerButton>
             <AddButton>
@@ -67,7 +67,8 @@ const ImageTitle = styled.div`
     width: 35vw;
     min-height: 170px;
     min-width: 200px;
-
+    margin-top: 10px;
+    
     img {
         width: 100%;
         height: 100%;
@@ -78,6 +79,11 @@ const ImageTitle = styled.div`
 const Controls = styled.div`
     display: flex;
     align-items: center;
+    @media (max-width: 525px) {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
 `
 
 const PlayButton = styled.button`
@@ -95,6 +101,10 @@ const PlayButton = styled.button`
 
     &:hover  {
         background: rgb(198,198,198);
+    }
+
+    @media (max-width: 525px) {
+        margin: 5px 0;
     }
 `
 
@@ -120,10 +130,23 @@ const AddButton = styled.button`
         font-size: 30px;
         color: white;
     }
+
+    &:hover {
+        background: rgb(198,198,198);
+    }
+
+    @media (max-width: 525px) {
+        margin-bottom: 5px;
+        margin-right: 0;
+    }
 `
 
 const GroupWatchButton = styled(AddButton)`
     background: rgb(0,0,0);
+
+    &:hover {
+        background: rgb(198,198,198);
+    }
 `
 
 const SubTitle = styled.div`
@@ -138,4 +161,5 @@ const Description = styled.div`
     font-size: 20px;
     margin-top: 16px;
     color: rgb(249,249,249);
+    max-width: 500px;
 `
