@@ -1,20 +1,26 @@
-import React, {useEffect} from "react";
+import React, {useEffect, useState} from "react";
 import styled from "styled-components";
 import ImgSlider from './ImgSlider';
 import Movies from "./Movies";
 import Viewers from './Viewers';
 
-import db from '../firebase'
-import { doc, onSnapshot, collection, query } from "firebase/firestore";
+import {db}from '../firebase-config'
+import { collection, getDocs } from "firebase/firestore";
 
 function Home() {
 
-    // useEffect(() => {
-    //     const q = query(collection(db, "movies"))
-    //     const unsub = onSnapshot(q, (querySnapshot) => {
-    //         console.log("Data", querySnapshot.docs.map(d => doc.data()));
-    //     });
-    //   }, [])
+    const [users, setUsers] = useState()
+    const usersCollectionRef = collection(db, "users")
+
+    useEffect(() => {
+        
+        const getUsers = async () => {
+            const data = await getDocs(usersCollectionRef)
+            setUsers(data.docs.map((doc) => ({...doc.data(), id: doc.id })))
+        }
+
+        getUsers()
+      }, [])
 
     return <Container>
                 <ImgSlider/>

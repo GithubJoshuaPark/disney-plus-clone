@@ -36,3 +36,10 @@
 ```
     $npm install react-router-dom
 ```
+> firebase install
+```
+    $npm install firebase
+    $npm install firebase-tools
+```
+> firebase usage ref 
+[ref CRUD Tutorial Using React + Firebase | Firebase 9 and Firestore Tutorial](https://www.youtube.com/watch?v=jCY6DH8F4oc)
