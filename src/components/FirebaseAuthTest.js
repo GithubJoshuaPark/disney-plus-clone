@@ -13,6 +13,8 @@ function FirebaseAuthTest() {
     const [user,          setUser         ] = useState({});
 
     onAuthStateChanged(auth, (currentUser) => {
+        // Adds an observer for changes to the user's sign-in state.
+        // called after login | logout | createuserWith...
         setUser(currentUser);
     });
 
@@ -28,7 +30,7 @@ function FirebaseAuthTest() {
 
     const login = async () => {
         try {
-            const user = await signInWithEmailAndPassword(auth, loginEmail, loginPwd);
+            const user =  await signInWithEmailAndPassword(auth, loginEmail, loginPwd);
             console.log(`🍎 ~ file: FirebaseAuthTest.js ~ line 32 ~ login ~ user`, user);
         } catch (error) {
             console.log(`🍎 ~ file: FirebaseAuthTest.js ~ line 34 ~ login ~ error`, error.message);

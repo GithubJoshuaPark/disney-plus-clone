@@ -38,7 +38,6 @@ function Movies() {
 export default Movies
 
 const Container = styled.div`
-
 `
 
 const Content = styled.div`

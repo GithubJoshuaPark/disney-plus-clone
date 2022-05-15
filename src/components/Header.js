@@ -14,7 +14,7 @@ function Header() {
     <Nav>
       <Logo src="/images/logo.svg" />
       <NavMenu>
-        <a href="http://goodneighborhood.kr">
+        <a href="/">
           <img src="/images/home-icon.svg"  alt=""/>
           <span>HOME</span>
         </a>

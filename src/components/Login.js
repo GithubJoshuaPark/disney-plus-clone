@@ -83,7 +83,7 @@ const SignUp = styled.a`
 `
 
 const Description = styled.p`
-    font-size; 11px;
+    font-size: 11px;
     letter-spacing: 1.5px;
     text-align: center;
     line-height: 1.5;
